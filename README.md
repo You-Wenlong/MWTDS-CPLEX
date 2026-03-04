@@ -57,7 +57,9 @@ udg_to_cplexdat.py           # UDG → CPLEX (无权结构)
 wtds_cplex.py                # 无权实例 CPLEX 批量实验
 wtds_cplex_weight.py         # general 带权实例求解
 wtds_udg_cplex_weight.py     # UDG 带权实例求解
+
 3. Supported Input Types ｜支持的图类型
+
 3.1 DIMACS Graphs (Unweighted)
 
 转换后 .txt/.dat 文件仅包含：
@@ -91,6 +93,7 @@ CPLEX 模型直接使用该权重
 Python 模型读取权重数组作为目标函数系数
 
 4. CPLEX Models ｜CPLEX 求解模型
+
 4.1 Python-based Exact Solver
 
 文件：
@@ -138,6 +141,7 @@ Python 批量脚本功能：
 输出格式示例：
 
 instance1.txt: Total Dominating Vertices = 123, Solve Time = 5.2341 seconds
+
 6. Runtime Environment ｜运行环境
 
 Tested Environment:
@@ -159,12 +163,14 @@ pip install tqdm
 CPLEX Python API must be installed separately.
 
 7. How to Run ｜使用方法
+
 7.1 Convert Graph Format
 
 Example:
 
 python dimacs_to_cplexdat.py
 python general_to_cplex_weight.py
+
 7.2 Run Batch Exact Solver
 
 Example:
@@ -176,6 +182,7 @@ python wtds_udg_cplex_weight.py
 Results will be written into:
 
 results/
+
 8. Problem Type ｜问题类型
 
 This framework solves:
